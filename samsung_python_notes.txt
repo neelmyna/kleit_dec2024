@@ -32,3 +32,154 @@ https://github.com/neelmyna/kleit_dec2024
 	7. Expiration: Select No Expiration
 	8. Do no other changes and scroll down -> Click generate token
 	9. Copy the PAT and mail/whatsApp to yourself 
+
+To download a public Repo, use the below command:
+$ git clone https://github.com/neelmyna/kleit_dec2024
+
+To set the Configurations:
+$ git config --global user.name "your_git_username"
+$ git config --global user.email "your_email"
+
+To update my Remote Repo, use the below 3 commands:
+
+1. Mark the files that need to be updated (Stage the Changes)
+1.
+$ git add .
+OR
+$ git add c:\learning\python\samsung_python_training
+
+Here, . (dot) means, current folder (directory or path)
+
+2. Commit the staged changes (git will create the object to be sent to server)
+$ git commit -m "your message"
+
+3. Now send the changes that need to be updated in the remote repo.
+Note that, the pull command is implicitly 1st run before the push.
+$ git push origin main
+
+NOTE: To keep cheking the changes, use the below command:
+$ git status
+
+Template Command to clone our Repo using PAT:
+$ git clone https://PAT@github.com/neelmyna/kleit_dec2024
+
+OPERATORS IN PYTHON:
+
+ARITHMETIC OPERATORS:
++ - / // * % **
+
+All are binary operators (Need 2 operands)
+I/P are numbers
+O/P is also a number
+In the expresssion 10 + 5 - 12, addition is performed 1st.
+Hence arithmetic operators have Left to Right Associtivity, except the power operator.
+That is, 10 + 5 + 15 = 15 + 15 = 30
+2 ** 3 ** 2 = 2 ** 9 = 512
+The operator ** has the highest priority/precdence
+Precedence of operators:
+**
+* / // %
++ -
+
+Relational Operators:
+> < >= <= != ==
+All are Binary operators.
+I/P are numbers
+O/P is truth value (boolean)
+They have lesser precedence than arithmetic operators, but higher than logical operators.
+
+What ever we do using >= and <= can be done using > and < respectively.
+For example:
+age >= 20 and age <= 80
+is same as:
+age > 19 and age < 81
+
+[10, 20] Closed Interval
+The range includes the end values
+num >= 10 and num <= 20
+
+(30, 50) Open Interval
+The range is 31 to 49 because it doesn't include the end values
+num > 30 and num < 50
+
+[20, 40) Right Open
+The range is 20 to 39
+num >= 20 and num < 40
+
+A student can enroll into the course if her age is between 18 and 60
+student_age >= 18 and student_age <= 60
+This is more readable
+
+student_age > 17 and student_age < 61
+This is less readable
+---------------------------------------------
+LOGICAL OPERATORS:
+and or not (Strictly Short Circuiting)
+
+I/P are boolean
+O/P is boolean
+not operator is unary (We prefix the not before the value)
+and or are binary operators
+Left to Right Associtivity
+In the expresssion: op1 and op2 or op3
+op1 and op2 is performed 1st
+The o/p of a condition is always passed as i/p to the logical operators.
+----------------------------------------------------
+DAY2 PROGRAMS
+
+1. Check if a number is Even.
+
+input_number = 454
+# We have assumed 45 as the input number to the program
+
+if input_number % 2 == 0:
+    print(input_number, ' is an Even number')
+------------------------------------------
+2. Check if the user given number is Even or not.
+
+print('Enter a number to check if it is Even or not')
+input_number = int(input())
+#print(type(input_number))
+
+if input_number % 2 == 0:
+    print(input_number, ' is an Even number')
+else:
+    print(f'{input_number} is not an Even number')
+----------------------------------------------------
+3. Check if the user given number is Even or Odd.
+
+print('Enter a number to check if it is Even or not')
+input_number = int(input())
+#print(type(input_number))
+
+#if n%2==0:
+if input_number % 2 == 0:
+    print(input_number, ' is an Even number')
+else:
+    print(f'{input_number} is an Odd number')
+----------------------------------------------------
+4. Check if user given year is a leap year
+
+----------------------------------------------------
+5. Check if user given number is 2 digit number
+
+----------------------------------------------------
+6. Read a string frpom the user and check if it is raining, then either go out with umbrella or play in water.
+
+----------------------------------------------------
+7. Read 2 string input from user, whether it is raining and lightning, then do not go out. If it is only raining then either go out with umbrella or play in water.
+
+
+----------------------------------------------------
+8. Check if it is cloudy or sunny. If sunny and hot, then go out with jacket. If only sunny the go out as you wish.
+If it is cloudy, then check if it is raining. IF it is only cloudy then go out as you wish. IF rainy go out with umbrella.
+
+
+----------------------------------------------------
+9. Check if it is cloudy or sunny. If sunny and hot, then go out with jacket. If only sunny the go out as you wish.
+If it is cloudy, then check if it is raining. IF it is only cloudy then go out as you wish. IF rainy then check if it is lightning.
+If it is raining and lightning, then do not go out. If it is only raining then either go out with umbrella or play in water. If it is only cloudy and lightning then do not go out.
+
+
+----------------------------------------------------
+10.
