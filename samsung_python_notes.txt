@@ -164,10 +164,16 @@ else:
 5. Check if user given number is 2 digit number
 
 ----------------------------------------------------
-6. Read a string frpom the user and check if it is raining, then either go out with umbrella or play in water.
+6. # Read a string from the user and check if it is raining, then either go out with umbrella or go out without umbrella.
 
+input_data = input('Tell me if it is raining now (type raining if yes, anything else if no): ')
+
+if input_data.lower() == "raining":
+    print('Go out with Umbrella')
+else:
+    print('You can go out with out Umbrella')
 ----------------------------------------------------
-7. Read 2 string input from user, whether it is raining and lightning, then do not go out. If it is only raining then either go out with umbrella or play in water.
+7. Read 2 string input from user, whether it is raining and lightning, then do not go out. If it is only raining then either go out with umbrella or play in water. If it is not raining, user may go out with out umbrella.
 
 
 ----------------------------------------------------
@@ -183,3 +189,246 @@ If it is raining and lightning, then do not go out. If it is only raining then e
 
 ----------------------------------------------------
 10.
+Accept 3 distinct numbers from the user and find the biggets among them
+
+num1
+num2
+num3
+
+if num1 > num2 and num1 > num3:
+	print num1 is big
+elif num2 > num3:
+	print num2 is big
+else:
+	print num3 is big
+----------------------------------------------------
+11.
+Accept a number and check if it is Perfect Square
+
+round()		7.5 is 8,  7.01 is 7, 7.99 is 8, 7.49 is 7
+ciel()		7.5 is 8,  7.01 is 8, 7.99 is 8, 7.0 is 7
+floor()		7.5 is 7,  7.01 is 7, 7.99 is 7, 7.0 is 7
+
+500		22.2	22		484
+196		14.0	14		196
+80		8.9		8		64
+
+Read N
+root = sqrt(N)
+print(type(root)) # float
+root = floor(root)
+print(type(root)) # int
+if root * root == N:
+	print N is perfect sq
+else:
+	print N is not a perfect sq
+
+----------------------------------------------------
+**12.
+Accept the average score from the user and print the result as follows:
+0  - 49 : Fail
+50 - 79 : Second Class
+80 - 95 : First Class
+96 - 100: Distinction
+Also check for invalid score
+
+Read SCORE
+if SCORE <= 49 and SCORE >= 0:
+	print Result = Fail
+elif SCORE <= 79:
+	print Result = Second Class
+elif SCORE <= 95:
+	print Result = First Class
+elif SCORE <= 100:
+	print Result = Distinction
+else:
+	print Invalid Score
+
+----------------------------------------------------
+int personAge;
+// personAge here is just a variable (one value only)
+
+// Now let us add properties to the age and craete an object
+EnggStudentAge:
+int age;
+final int minAge=18;
+const int maxAge=60;
+checkMinAge()
+checkMaxAge()
+getAge()
+setAge()
+
+--------------------------------------------------------
+13
+Implementation of a Restaurant App.
+Show the Menu to the customer and accept the food number from the customer and serve the food to the customer of his choice.
+
+read food_number
+switch food_number
+	print the food name according to the number
+	
+
+------------------------------------------------
+NAMING STANDARDS
+
+food_number 
+snake case (python, sql etc)
+
+foodNumber
+camel case (Java, C#, JS etc.)
+
+--------------------------------------------------------
+Level 2: Taxable Income Calculation
+Objective: Calculate taxable income after standard deductions.
+Tasks:
+• Deduct a Standard Deduction of ₹50,000 from the annual gross salary.
+• Compute the Taxable Income and display all intermediate calculations.
+Output: Display gross salary, standard deduction and taxable income
+
+Level 3: Tax and Rebate Calculation
+Objective: Compute tax payable using the New Tax Regime (2023) slabs.
+Tasks:
+1. Calculate tax based on the following slabs:
+o ₹0 - ₹3,00,000: 0%
+o ₹3,00,001 - ₹6,00,000: 5%
+o ₹6,00,001 - ₹9,00,000: 10%
+o ₹9,00,001 - ₹12,00,000: 15%
+o ₹12,00,001 - ₹15,00,000: 20%
+o Above ₹15,00,000: 30%
+2. Apply Section 87A Rebate:
+o Taxable income ≤ ₹7,00,000 → 100% rebate (tax payable = ₹0).
+3. Add a 4% Health and Education Cess to the calculated tax.
+Output:
+• Display a detailed tax breakdown, including slabs, cess, and total tax payable.
+
+tax_amount = 0
+if taxable_salary >= 300001 and taxable_salary <= 600000:
+	tax_amount_minus_cess = taxable_salary * 0.05
+elif taxable_salary >= 600001 and taxable_salary <= 900000:
+	tax_amount_minus_cess = taxable_salary * 0.1
+elif taxable_salary >= 900001 and taxable_salary <= 120000:
+	tax_amount_minus_cess = taxable_salary * 0.15
+elif taxable_salary >= 1200001 and taxable_salary <= 1500000:
+	tax_amount_minus_cess = taxable_salary * 0.2
+elif taxable_salary >= 150000:
+	tax_amount_minus_cess = taxable_salary * 0.3
+
+tax_amount = tax_amount_minus_cess + tax_amount_minus_cess * 0.04
+
+read from emp yes or no for 87a
+if yes:
+	if taxable_salary <= 700000:
+		tax_amount = 0
+
+print tax slabs
+print cess percentage
+print(tax_amount)
+----------------------------------------------------
+Level 4: Net Salary Calculation
+Objective: Calculate annual net salary after tax deductions.
+Tasks:
+1. Compute Net Salary = Annual Gross Salary - Total Tax Payable.
+2. Display:
+o Annual Gross Salary
+o Total Tax Payable (including cess)
+o Annual Net Salary
+
+net_salary = gross_annual_salary - tax_amount
+print gross_annual_salary
+print tax_amount
+print net_salary
+-------------------------
+Level 5: Report Generation
+Objective: Generate a detailed report for employees.
+Tasks:
+1. Summarize all computed details:
+o Employee Details (Name, EmpID)
+o Gross Monthly Salary
+o Annual Gross Salary
+o Taxable Income
+o Tax Payable (with breakdown)
+o Annual Net Salary
+2. Format the output as a report for better readability.
+Output:
+• Provide a clean, tabular report for employees.
+---------------------------------------------------
+DAY4 THURSDAY 12-12-24
+
+Command Line Arguments in Python:
+
+# cline1.py
+import sys
+
+print(sys.argv[0])
+print(sys.argv[1])
+print(type(sys.argv[1]))
+print(type(sys.argv))
+---------------------------------------------------
+BUILT IN FUNCTIONS OF PYTHON:
+
+type()
+Returns the DT of the value (literal) or the variable
+
+len()
+sum()
+min()
+max()
+sorted()
+sorted(reverse=True)
+
+range()
+
+range(10)
+[0, 10)
+
+range(10, 30)
+[10, 29]
+
+In both the above cases, the default increment is 1
+
+range(10, 30, 2)
+Returns: 10, 12, 14, 16, 18, 20, 22, 24, 26, 28
+
+
+range(20, 1, -2)
+Returns: 20, 18, 16, 14, 12, 10, 8, 6, 4, 2
+
+range(30, 0, -1)
+
+---------------------------------------------------
+1. Accept number from the user from command line and print its Math table for multiple upto 20
+
+N=12
+
+12 * 1 = 12
+12 * 2 = 24
+.
+12 * 20 = 240
+
+# cline1.py
+import sys
+
+# python table.py 14
+
+input_number = int(sys.argv[1])
+
+for i in range(1, 21):
+    #print(f'{input_number} * {i} = {input_number * i}')
+    print('%d * %02d = %03d'%(input_number, i, input_number*i))
+-------------------------------------------------
+# cline1.py
+import sys
+
+sum_of_numbers = 0
+print('User given numbers are')
+for i in range(1, len(sys.argv)):
+    print(sys.argv[i], end = '  ')
+    sum_of_numbers = sum_of_numbers + int(sys.argv[i])
+
+print(f'\nSum of the {len(sys.argv)-1} user given numbers is {sum_of_numbers}')
+# argv[0] argv[1] argv[2]
+-------------------------------------------------
+1. Check if a number is Prime
+2. Find sum of digits of a number
+	1. arithmetic/traditional way 2. pythonic way
+3. 
