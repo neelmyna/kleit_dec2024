@@ -431,4 +431,21 @@ print(f'\nSum of the {len(sys.argv)-1} user given numbers is {sum_of_numbers}')
 1. Check if a number is Prime
 2. Find sum of digits of a number
 	1. arithmetic/traditional way 2. pythonic way
-3. 
+3. Find Biggest/smallest digit in a number
+**4. Find 2nd smallest digit in a number
+5. Find sum of the series: n + n2 + n3 .... up to 10 terms
+6. Find sum of the series: 1 - n + n2 - n3 .... up to m terms
+7. Find Nth Prime number
+8. Print Prime numbers between M and N ( M < N )
+9. Print the N terms of Fibo series starting with 1 and 2
+10.Find Nth Fibo term starting with 1 and 2
+11.Print Equilateral Triangle of N lines made up of stars (*)
+12. Print Pascal's Triangle of N lines
+13. Print X shape of N lines
+14. Print Hollow square of N lines
+15. Print Hollow Rhombus
+16. Print X shape inside hollow Square
+17. Find sum of Odd digits of a number
+18. Find Sum of Even Placed digits of a number (The Left most digit of the number is at position 1)
+19. Find sum of Odd placed Even digits of a number.
+20. Find Nth term of the series: 1 2 2 3 3 5 5 7 8 11 13 13
