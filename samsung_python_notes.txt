@@ -550,4 +550,32 @@ print('%-15 %-15s'%('STATE', 'CAPITAL'))
 print('-' * 32)
 for i in range(len(sys.argv)-1):
 	print('%-15 %-15s'%(states[i], capitals[i]))
-	
+-------------------------------------------------------
+Download MySQL:
+Create a folder named "mysql" in C:\software
+G search: Download MySQL
+open: https://www.mysql.com/downloads/
+Scroll down and click: MySQL Community (GPL) Downloads 
+Click: MySQL Installer for Windows
+Observe the version 8.0.xx
+Download the msi file of size 3xx MB
+Now, cut and paste the installer file from downloads folder to C:\software\mysql
+
+Installation of MySQL:
+Double Click the installer file
+	Choosing the setup File: (check box) Full -> Click Next
+	Installation: Click Execute -> Click Next
+	Product Configuration: Click Next
+	Type and Networking: Do not change the settings (remember the port number 3306) Click Next
+	Authentication Method: (No changes) Click Next
+	Accounts and Rolls: Add the Root Password as "root123" -> Click Next
+	Windows service: Click Next
+	Server File Permissions: Click Next
+	Apply Configurations: Click Execute -> Click Finish
+	Product Configuration: Click Next
+	MySQL Router Config: Click Finish
+	Product Configuration: Click Next
+	Connect to Server: Enter password and Click Check (Connection succeeded must appear)
+	Apply Configurations: Click Execute -> Click Finish
+	Product Configuration: Click Next
+	Installation Complete: Click Finish
