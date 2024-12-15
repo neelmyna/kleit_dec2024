@@ -582,5 +582,94 @@ Double Click the installer file
 ----------------------------------------------------
 DAY8 SUNDAY 15-12-2024
 
+Quick Sort:
+	quick_sort()
+	partition()
+
+In the Partition, we accessed all the elements of the array to partitioned.
+There were n elements in the array.
+Hence the efficiency of Partition algorithm is O(n)
+
+The quick_sort() function is a recursive function and in each recursive call, we divided the array into 2 parts.
+Hence the efficiency of recursion is O(LogN)
+
+So the total efficiency of Quick sort is O(N LogN)
+
+However, in the worst case (when the input array is already sorted), then we saw that the efficency worsened to O(N square)
+
+WCE: O(N square)
+BCE: O(N LogN)
+-----------------------------------------------------------
+Binary Search:
+BCE: O(1)
+WCE: O(LogN)
+
+--------------------------------------------------------------
+BUBBLE SORT: Brute Force
+
+We start comparing consecutive elements of the array from one of the array to another end/corner.
+If the 1st/left element is bigger than the 2nd/right, then we swap them. And this comparison we continue until end of the array.
+Thus we end up bubbling the biggest number to the end of the array.
+Now this element is in its final postion (It must not be disturbed)
+Now, start again from the beginning and do the same job until the 2nd biggest element is bubbled/moved to its final position.
+
+23  2  12  5  9  15  7
+
+
+2  5  7  9  12  15  23
+
+Before Optimization:
+WCE: O(n2)
+BCE: O(n2)
+
+After Optimization:
+WCE: O(n2)
+BCE: O(n)
+
+When to use and when not to use Bubble sort.
+----------------------------------------------------------------
+Insertion Sort: Decrease and Conquer
+
+What to decrease?
+We decrease the amount of problem.
+We use Optimistic start.
+Even before starting the sort, insertion sort reconizes/observes that there is already a sorted array.
+
+12   44   2   10   9   17   7
+12
+12   44
+2    12   44
+2    10   12   44
+2    9    10   12   44
+2    9    10   12   17    44
+2    7    9    10   12   17    44
+
+
+2    7    9    10   12   17    44
+2
+2    7
+2    7    9
+2    7    9    10
+
+23  17  13   11  7  5  3  2
+23
+17  23
+13  17  23
+13  17  23
+11  13  17  23
+
+When to use Insertion Sort:
+1. When we are sorting an almost sorted array O(n)
+2. When we are sorting a samller sized array  O(n2)
+
+When not to use Insertion Sort:
+When the i/p array is almost sorted and its size is very big and we are sorting in reverse.
+Assume there are One lakh elements and the last 1000 elements has to be inserted at the front end. Here, for every element we have to do approx 10000 shifts. Thus we have a total of 1000 * 100000 = 10(8) shifts
+
+BCE: O(n)
+WCE: O(n2)
+
+
+
 
 
