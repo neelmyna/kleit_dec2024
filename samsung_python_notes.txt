@@ -579,3 +579,8 @@ Double Click the installer file
 	Apply Configurations: Click Execute -> Click Finish
 	Product Configuration: Click Next
 	Installation Complete: Click Finish
+----------------------------------------------------
+DAY8 SUNDAY 15-12-2024
+
+
+
