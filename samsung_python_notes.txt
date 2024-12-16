@@ -845,10 +845,21 @@ group by
 
 ifnull(commission, 0) + salary as total_salary
 ---------------------------------------------------------
+DAY8 MONDAY 16-12-2024
 
+host: 
+port:
+username:
+password:
+database:
+charset:
 
+Common steps between all the CRUD (Restful APIs) operations are:
 
-
-
-
+set the query and read data of the query
+get the connection object and the cursor object
+execute/run the query
+Process the result set (if searchRow or listAll)
+commit the changes if DML
+close the cursor object and the connection object
 
