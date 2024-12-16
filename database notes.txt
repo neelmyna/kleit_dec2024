@@ -158,20 +158,25 @@ Durability:
 Once a user is notified of success in his transaction, the action on the DB will persist.
 
 SELECT * FROM dept;
-Select all columns from the dept table 
-* means all
+// Select all columns from the dept table (* means all)
+
 
 SELECT dept_name FROM dept;
+// select a particular column from the table. dept_name from all the rows will be displayed
+
 SELECT ALL dept_name FROM dept;
-To select a specific column
+// select a particular column from the table. dept_name from all the rows will be displayed. Returns a list
+
+Note:
 This displays all the department names
 By default, ALL keyword is always added.
 
 SELECT dept_name, location FROM  dept;
-To select specific columns from a table.
+// To select specific columns from a table.
 
 DISTINCT: To select unique rows from the table.
 SELECT DISTINCT location FROM dept;
+// returns a set
 
 FILTERING ROWS using WHERE clause:
 
