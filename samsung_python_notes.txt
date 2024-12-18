@@ -862,4 +862,66 @@ execute/run the query
 Process the result set (if searchRow or listAll)
 commit the changes if DML
 close the cursor object and the connection object
+------------------------------------------------------------------
+Pandas
 
+python pandas script to read an excel sheet having 2 columns id and name
+
+pip install pandas openpyxl
+
+import pandas as pd
+
+# Define the path to the Excel file
+file_path = 'your_file.xlsx'
+
+# Read the Excel file into a pandas DataFrame
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the DataFrame
+print(df.head())
+
+Explanation:
+file_path is the location of your Excel file. Replace 'your_file.xlsx' with the path to your file.
+pd.read_excel(file_path) reads the Excel file into a pandas DataFrame.
+df.head() will display the first 5 rows of the DataFrame, so you can inspect the data.
+
+
+Make sure your Excel file has columns labeled id and name. If the column names are different, you can specify them using the names parameter like this:
+df = pd.read_excel(file_path, names=['id', 'name'])
+
+This will ensure the columns are named id and name, regardless of how they appear in the file.
+---------------------------------------------------
+DAY10 WEDNESDAY 18-12-2024
+
+1. Create a excel sheet with columns: USN and Name
+2. Read the data of excel sheet row wise
+3. Create a template HTML for the certificate (workshop certificate)
+	The template should have 2 place holders (variables) to accept the usn and student name.
+4. Read the excel sheet (.csv file) row wise
+	1. Insert the usn and name into the html
+	2. generate the name of the html with student usn
+	3. Save the .html file
+	4. Convert all the html files into pdf files
+
+
+RestFul APIs
+get			listAll()
+get/id		search()
+post		insert_row()
+put			update_row()
+delete		delete_row()
+
+
+
+1. program to convert a .html file into .pdf
+
+2. create a html file and name the html file with the name given by the user
+	1. copy the content of the file from the template.html
+	2. Read name of the file from user
+	3. Save the file with the name given by user
+
+3. Read data from user (console) and add it in to the html file and save the html as expected in program-2
+
+4. Read the data from excel sheet or .csv file and repeat the program-3
+
+5. Read all the rows from excel sheet row wise and repeat program-4
